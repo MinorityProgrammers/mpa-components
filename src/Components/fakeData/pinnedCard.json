@@ -1,0 +1,18 @@
+[
+    {
+        "base":"complete",
+        "title":"Completed a course",
+        "desc":"Intro to UX Design: building digital technologies"
+    },
+    {
+        "base":"chapter-lead",
+        "title":"Became a chapter lead",
+        "desc":"Silicon valley Engineers",
+        "desc2":"Plato Alto Chapter, San Francisco"
+    },
+    {
+        "base":"new-job",
+        "title":"Got a new job",
+        "desc":"Joined MPA as a UX design intern"
+    }
+]
