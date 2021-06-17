@@ -3,7 +3,7 @@ import './App.css';
 import User from './Components/user'
 function App() {
   return (
-    <div className="App">
+    <div>
       <User></User>
     </div>
   );
