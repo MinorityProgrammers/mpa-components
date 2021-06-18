@@ -12,39 +12,50 @@ import './user.css'
 const User = () => {
   const keywords = [
     {
-      key: "Defi",
+      id:1,
+      title: "Defi",
     },
     {
-      key: "Adventure",
+      id:2,
+      title: "Adventure",
     },
     {
-      key: "Bitcoin mining",
+      id:3,
+      title: "Bitcoin mining",
     },
     {
-      key: "Flutter",
+      id:4,
+      title: "Flutter",
     },
     {
-      key: "Solidity",
+      id:5,
+      title: "Solidity",
     },
     {
-      key: "Web development",
+      id:6,
+      title: "Web development",
     },
     {
-      key: "Machine Learning",
+      id:7,
+      title: "Machine Learning",
     }
   ]
 
   const social_links =[
     {
+      id:8,
       slink:<FaFacebook />
     },
     {
+      id:9,
       slink:<FaTwitter />
     },
     {
+      id:10,
       slink:<FaLinkedin />
     },
     {
+      id:11,
       slink:<FaTwitch />
     }
   ]
@@ -89,7 +100,7 @@ const User = () => {
             <div className="keywords">
                 <p className="flex justify-end  flex-wrap">
                   {
-                   keywords.map(key =>( <a href="#" className="inline-block px-2 py-1 mr-2 border-gray-500 mb-1 rounded-md border">{key.key}</a>)) 
+                   keywords.map((keyword) =>( <a href="/" key={keyword.id} className="inline-block px-2 py-1 mr-2 border-gray-500 mb-1 rounded-md border">{keyword.title}</a>)) 
                   }
                 </p>
             </div>
@@ -97,7 +108,7 @@ const User = () => {
               <p className="flex self-center">
                 <strong>Follow me</strong>
                 {
-                  social_links.map(link=>(<a className="social" href="#">{link.slink}</a>))
+                  social_links.map(link=>(<a className="social" key={link.id} href="/">{link.slink}</a>))
                 }
                 
               </p>
@@ -114,7 +125,7 @@ const User = () => {
       <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-4">
      {
         pinnedCards.map(pinitem =>(
-    <li x-for="item in items">
+    <li x-for="item in items" key={pinitem.id}>
       <a href="item.url" className="shadow-xl hover:bg-light-blue-500 hover:border-transparent hover:shadow-lg group block rounded-lg p-4 border border-gray-200 bg-white">
         <dl className="grid sm:block lg:grid xl:block grid-cols-2 grid-rows-2 items-start h-36 ">
           <div className="">
@@ -172,7 +183,7 @@ const User = () => {
      <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
      {
         items.map(item =>(
-    <li x-for="item in items ">
+    <li x-for="item in items " key={item.id}>
       <a href="item.url" className="hover:bg-light-blue-500 hover:border-transparent hover:shadow-lg group block rounded-lg p-4 border-gray-300 border bg-white">
         <dl className="h-24 grid sm:block lg:grid xl:block grid-cols-2 grid-rows-2 items-start ">
           <div className="">
