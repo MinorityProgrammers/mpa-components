@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import User from './Components/user'
+import User from './Components/userProfile/user'
 function App() {
   return (
     <div>
