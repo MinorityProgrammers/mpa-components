@@ -1,0 +1,67 @@
+.social { 
+  display: inline-block;
+  padding: 0 5px;
+  font-size: 1rem;
+  
+}
+
+.avatar{
+    position: relative;
+    text-align: center;
+    
+}
+.avatar-btn{
+    width: 70%;
+    height: 50px;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, .7);
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.avatar-img{
+   background-color: rgba(255, 255, 255, 0.5);
+   padding: 10px 15px;
+   border-radius: 5px;
+   background-image: linear-gradient(161.32deg, #FF00B8 3.86%, #151371 98.64%);
+
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+
+}
+
+.circle{
+    width: 25px;
+    height:25px;
+    border-radius: 50%;
+    background-color: gray;
+    display:inline-block;
+    margin-right:10px;
+
+}
+.complete{
+    background-color:rgba(93, 229, 71, 1);
+
+}
+.chapter-lead{
+    background-color:rgba(255, 101, 91, 1);
+    
+}
+.new-job{
+    background-color: rgba(245, 126, 216, 1);
+
+}
+.logo-brand p a img{
+    width: 40px;
+}
+.social-link{
+    float:right;
+}
+.add-headline {
+    margin: auto auto;
+    width: 40%;
+    margin-top: 20%;
+}

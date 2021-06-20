@@ -1,10 +1,10 @@
 import React from 'react';
 import './App.css';
-import User from './Components/userProfile/user'
+import Profile from './Components/userProfile/profilePage';
 function App() {
   return (
     <div>
-      <User></User>
+      <Profile></Profile>
     </div>
   );
 }
